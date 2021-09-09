@@ -1,0 +1,30 @@
+{{>header}}
+{{>navbar}}
+
+  <div class="album py-5" style="margin-left: 300px; ">
+    <div class="container" >
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 white">
+
+        <div class="col" style="width:700px;" >
+          <div class="card shadow-sm">
+            <img src='{{kabupaten.photo}}' alt='' class='list-thumbnail'/>
+
+            <div class="card-body">
+              <p class="card-text">Nama : {{kabupaten.nama}}</p>
+              <p class="card-text">Diresmikan : {{kabupaten.diresmikan}}</p>
+              <p class="card-text">Provinsi : {{kabupaten.provinsi_id}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/editKabupaten/{{kabupaten.id}}" class="btn btn-sm btn-primary">Edit</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+{{>footer}}
